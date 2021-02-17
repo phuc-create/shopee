@@ -1,0 +1,100 @@
+.mall-btn--prev,
+.mall-btn--next,
+.fl-sale--prev,
+.fl-sale--next,
+.cate .cate__container--prev,
+.cate .cate__container--next {
+    position: absolute;
+    top: 35%;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    transform: scale(0.5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 0%), 0px 0px 15px rgb(0 0 0 / 0%), 0px 1px 20px rgb(0 0 0 / 42%);
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mall-btn--prev:hover,
+.mall-btn--next:hover,
+.cate .cate__container--prev:hover,
+.cate .cate__container--next:hover,
+.fl-sale--prev:hover,
+.fl-sale--next:hover {
+    transform: scale(1);
+}
+
+.cate .cate__container--prev span,
+.cate .cate__container--next span,
+.fl-sale--prev span,
+.fl-sale--next span,
+.mall-btn--prev span,
+.mall-btn--next span {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.54);
+    transition: 0.5s;
+}
+
+.cate .cate__container--prev:hover span,
+.cate .cate__container--next:hover span,
+.fl-sale--prev:hover span,
+.fl-sale--next:hover span,
+.mall-btn--prev:hover span,
+.mall-btn--next:hover span {
+    font-size: 30px;
+}
+
+.cate .cate__container--prev i,
+.cate .cate__container--next i,
+.fl-sale--prev i,
+.fl-sale--next i,
+.mall-btn--prev i,
+.mall-btn--next i {
+    position: relative;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.cate .cate__container--prev:hover i,
+.cate .cate__container--next:hover i,
+.fl-sale--prev:hover i,
+.fl-sale--next:hover i,
+.mall-btn--prev:hover i,
+.mall-btn--next:hover i {
+    position: relative;
+    font-size: 35px;
+}
+
+.mall-btn--prev {
+    left: calc(31% - 7px);
+    z-index: 10;
+}
+
+.mall-btn--next,
+.fl-sale--next {
+    right: -25px;
+    z-index: 10;
+}
+
+.fl-sale--prev {
+    left: -25px;
+    z-index: 10;
+}
+
+.cate .cate__container--next {
+    right: -25px;
+    z-index: 10;
+    top: 50%;
+}
+
+.cate .cate__container--prev {
+    left: -25px;
+    z-index: 10;
+    top: 50%;
+}
