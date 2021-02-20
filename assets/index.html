@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopee clone</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="./sass/css/style.css">
 
 </head>
@@ -14,10 +14,10 @@
 <body>
     <!--Header 1-->
     <header class="header-container">
-        <div class="header">
+        <div class="__header">
             <div class="a-h">
-                <a href="#">Kênh Người Bán</a>
-                <a href="#">Tải ứng dụng</a>
+                <a href="#">Kênh Người Bán</a> |
+                <a href="#">Tải ứng dụng</a> |
                 <a href="#">Kết nối <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i></a>
             </div>
@@ -41,7 +41,7 @@
                     <button><i class="fas fa-search"></i></button>
                 </div>
                 <div class="recom">
-                    <a href="#">bàn phím</a>
+                    <a href="#">Bàn Phím</a>
                     <a href="#">Hoodie Nam</a>
                     <a href="#">Sandal Nữ</a>
                     <a href="#">Áo Nữ</a>
@@ -52,13 +52,66 @@
                 </div>
             </div>
             <div class="cart">
-                <i class="fas fa-shopping-cart cart-i"></i>
-                <span>20</span>
+                <a href=""><i class="fas fa-shopping-cart cart-i"></i></a>
+
             </div>
         </div>
     </header>
     <!--x-Header  End-x-->
+    <div class="clear"></div>
 
+    <!--BODY SHOPEE-->
+    <div class="container">
+        <!--carousel and navigation-->
+        <div class="__ads">
+            <div class="carousel">
+                <div class="prev-btn">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="wrap">
+                    <div class="img-wrapper">
+                        <div class="img-slider">
+                            <img src="../image/shop1.jpeg">
+                        </div>
+                        <div class="img-slider">
+                            <img src="../image/shop2.jpg">
+                        </div>
+                        <div class="img-slider">
+                            <img src="../image/shop5.jpg">
+                        </div>
+                        <div class="img-slider">
+                            <img src="../image/shop3.jpg">
+                        </div>
+                        <div class="img-slider">
+                            <img src="../image/shop4.jpeg">
+                        </div>
+                        <div class="img-slider">
+                            <img src="../image/shop7.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="next-btn">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="dots-slider">
+
+                </div>
+            </div>
+            <div class="ads">
+                <div class="ads-f">
+                    <a href=""><img src="../image/shop4.jpeg"></a>
+                </div>
+                <div class="ads-s">
+                    <a href=""><img src="../image/shop7.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <!--x-carousel and navigation-x-->
+    </div>
+    <!--X-BODY SHOPEE-X-->
+    <!--SCRIPT-->
+    <script src="../js/slider.js"></script>
+    <!--X-SCRIPT-X-->
 </body>
 
 </html>

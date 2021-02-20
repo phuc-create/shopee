@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+  position: fixed;
+  height: auto;
+  padding: 10px 0px 0px 0px;
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-container .__header {
+  position: relative;
+  min-width: 1200px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.header-container .__header .a-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header-container .__header .a-h a {
+  padding: 0px 10px 0px 0px;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.header-container .__header .a-h a:nth-child(3) i {
+  padding: 0px 3px 0px 3px;
+}
+.header-container .__header .b-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header-container .__header .b-h a {
+  padding: 0px 10px 0px 0px;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.header-container .__header .b-h .login {
+  position: relative;
+}
+.header-container .__header .b-h .login a {
+  padding: 0px 10px 0px 0px;
+}
+.header-container .__header .b-h .login a:nth-child(2) {
+  padding: 0px 0px 0px 10px;
+}
+.header-container .h-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+  padding: 20px 0px 20px 0px;
+  width: 1200px;
+}
+.header-container .h-banner .banner {
+  position: relative;
+}
+.header-container .h-banner .banner a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+}
+.header-container .h-banner .banner a i {
+  font-size: 46px;
+  color: #fff;
+  padding-right: 5px;
+}
+.header-container .h-banner .banner a span {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 500;
+}
+.header-container .h-banner .banner a span:before {
+  content: "S";
+  position: absolute;
+  font-size: 32px;
+  width: 20px;
+  height: 40px;
+  top: 14px;
+  left: 10px;
+  color: #f53d2d;
+}
+.header-container .h-banner .search-bar {
+  display: block;
+  width: auto;
+  height: auto;
+}
+.header-container .h-banner .search-bar .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+}
+.header-container .h-banner .search-bar .search input[type=text] {
+  width: 760px;
+  padding: 13px 10px;
+  border-radius: 3px 0px 0px 3px;
+  outline: none;
+  border: none;
+}
+.header-container .h-banner .search-bar .search button {
+  width: 60px;
+  height: 41px;
+  background-color: #fb5533;
+  border: 3px solid #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0px 3px 3px 0px;
+}
+.header-container .h-banner .search-bar .search button i {
+  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.header-container .h-banner .search-bar .recom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start !important;
+  position: relative;
+}
+.header-container .h-banner .search-bar .recom a {
+  padding-right: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+.header-container .h-banner .cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .h-banner .cart i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+.container .__ads {
+  position: relative;
+  min-width: 1200px;
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .__ads .carousel {
+  width: 800px;
+  height: 230px;
+}
+.container .__ads .carousel .prev-btn {
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.1);
+  top: 43%;
+  left: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+.container .__ads .carousel .prev-btn i {
+  font-size: 25px;
+  color: #fff;
+}
+.container .__ads .carousel .prev-btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.container .__ads .carousel:hover .prev-btn {
+  opacity: 1;
+}
+.container .__ads .carousel .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.container .__ads .carousel .wrap .img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: calc(800px * 6);
+  height: 235px;
+  display: flex;
+  background: red;
+  transition: 0.5s;
+}
+.container .__ads .carousel .wrap .img-wrapper .img-slider {
+  display: flex;
+}
+.container .__ads .carousel .wrap .img-wrapper .img-slider img {
+  width: 798px;
+  height: 228px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .__ads .carousel .next-btn {
+  position: absolute;
+  top: 43%;
+  right: 514px;
+  width: 25px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container .__ads .carousel .next-btn i {
+  font-size: 25px;
+  color: #fff;
+}
+.container .__ads .carousel .next-btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.container .__ads .carousel:hover .next-btn {
+  opacity: 1;
+}
+.container .__ads .carousel .dots-slider {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  width: 200px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .__ads .carousel .dots-slider .dot {
+  position: relative;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+}
+.container .__ads .carousel .dots-slider .dot.active {
+  background: #f53d2d;
+}
+.container .__ads .ads {
+  position: relative;
+  width: 400px;
+  height: 230px;
+}
+.container .__ads .ads .ads-f {
+  position: relative;
+  width: 100%;
+  height: 115px;
+  padding: 2px 0px 1px 2px;
+}
+.container .__ads .ads .ads-f img {
+  width: 400px;
+  height: 120px;
+  background-size: cover;
+}
+.container .__ads .ads .ads-s {
+  position: relative;
+  width: 100%;
+  height: 114px;
+  padding: 2px 0px 1px 2px;
+}
+.container .__ads .ads .ads-s img {
+  width: 400px;
+  height: 100%;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

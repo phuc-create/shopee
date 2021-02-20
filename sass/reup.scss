@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none !important;
+}
+
+.clear {
+    clear: both;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+}
+
+.header-container {
+    width: 100%;
+    position: fixed;
+    height: auto;
+    padding: 10px 0px 0px 0px;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+    @include flex-center();
+    flex-direction: column;
+    .__header {
+        position: relative;
+        min-width: 1200px;
+        padding: 0px;
+        @include flex-center();
+        justify-content: space-between !important;
+        .a-h {
+            @include flex-center();
+            color: #fff;
+            a {
+                padding: 0px 10px 0px 0px;
+                color: #fff;
+                font-size: 13.5px;
+                font-weight: 500;
+            }
+            a:nth-child(3) {
+                i {
+                    padding: 0px 3px 0px 3px;
+                }
+            }
+        }
+        .b-h {
+            @include flex-center();
+            color: #fff;
+            a {
+                padding: 0px 10px 0px 0px;
+                color: #fff;
+                font-size: 13.5px;
+                font-weight: 500;
+            }
+            .login {
+                position: relative;
+                a {
+                    padding: 0px 10px 0px 0px;
+                }
+                a:nth-child(2) {
+                    padding: 0px 0px 0px 10px;
+                }
+            }
+        }
+    }
+    .h-banner {
+        @include flex-center();
+        justify-content: space-between !important;
+        padding: 20px 0px 20px 0px;
+        width: 1200px;
+        .banner {
+            position: relative;
+            a {
+                position: relative;
+                @include flex-center();
+                align-items: baseline !important;
+                justify-content: space-between !important;
+                i {
+                    font-size: 46px;
+                    color: #fff;
+                    padding-right: 5px;
+                }
+                span {
+                    font-size: 33px;
+                    color: #fff;
+                    font-weight: 500;
+                    &:before {
+                        content: 'S';
+                        position: absolute;
+                        font-size: 32px;
+                        width: 20px;
+                        height: 40px;
+                        top: 14px;
+                        left: 10px;
+                        color: #f53d2d;
+                    }
+                }
+            }
+        }
+        .search-bar {
+            display: block;
+            width: auto;
+            height: auto;
+            .search {
+                @include flex-center();
+                padding-bottom: 5px;
+                position: relative;
+                input[type="text"] {
+                    width: 760px;
+                    padding: 13px 10px;
+                    border-radius: 3px 0px 0px 3px;
+                    outline: none;
+                    border: none;
+                }
+                button {
+                    width: 60px;
+                    height: 41px;
+                    background-color: #fb5533;
+                    border: 3px solid #fff;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 0px 3px 3px 0px;
+                    i {
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .recom {
+                @include flex-center();
+                justify-content: flex-start !important;
+                position: relative;
+                a {
+                    padding-right: 10px;
+                    font-size: 12px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+        .cart {
+            position: relative;
+            @include flex-center();
+            i {
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    .__ads {
+        position: relative;
+        min-width: 1200px;
+        margin-top: 130px;
+        @include flex-center();
+        .carousel {
+            width: 800px;
+            height: 230px;
+            .prev-btn {
+                position: absolute;
+                width: 25px;
+                height: 45px;
+                background: rgba(0, 0, 0, 0.1);
+                top: 43%;
+                left: 116px;
+                @include flex-center();
+                cursor: pointer;
+                transition: 0.5s;
+                z-index: 1;
+                opacity: 0;
+                i {
+                    font-size: 25px;
+                    color: #fff;
+                }
+                &:hover {
+                    background: rgba(0, 0, 0, 0.3);
+                }
+            }
+            &:hover .prev-btn {
+                opacity: 1;
+            }
+            .wrap {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border: 2px solid #fff;
+                .img-wrapper {
+                    position: relative;
+                    overflow: hidden;
+                    width: calc(800px * 6);
+                    height: 235px;
+                    display: flex;
+                    background: red;
+                    transition: 0.5s;
+                    .img-slider {
+                        display: flex;
+                        img {
+                            width: 798px;
+                            height: 228px;
+                            background-position: center center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+            .next-btn {
+                position: absolute;
+                top: 43%;
+                right: 514px;
+                width: 25px;
+                height: 45px;
+                background: rgba(0, 0, 0, 0.1);
+                @include flex-center();
+                z-index: 1;
+                opacity: 0;
+                cursor: pointer;
+                transition: 0.5s;
+                i {
+                    font-size: 25px;
+                    color: #fff;
+                }
+                &:hover {
+                    background: rgba(0, 0, 0, 0.3);
+                }
+            }
+            &:hover .next-btn {
+                opacity: 1;
+            }
+            .dots-slider {
+                position: absolute;
+                bottom: 10px;
+                left: 30%;
+                width: 200px;
+                height: 20px;
+                @include flex-center();
+                .dot {
+                    position: relative;
+                    margin: 5px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 0.5);
+                }
+                .dot.active {
+                    background: #f53d2d;
+                }
+            }
+        }
+        .ads {
+            position: relative;
+            width: 400px;
+            height: 230px;
+            .ads-f {
+                position: relative;
+                width: 100%;
+                height: 115px;
+                padding: 2px 0px 1px 2px;
+                img {
+                    width: 400px;
+                    height: 120px;
+                    background-size: cover;
+                }
+            }
+            .ads-s {
+                position: relative;
+                width: 100%;
+                height: 114px;
+                padding: 2px 0px 1px 2px;
+                img {
+                    width: 400px;
+                    height: 100%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
