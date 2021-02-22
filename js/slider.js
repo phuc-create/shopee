@@ -89,6 +89,7 @@ const mallimgContainer = document.querySelector(".set--slider-for-mall"); //cái
 const mallimgSingle = document.querySelectorAll(".mall--mid__img-single"); //lấy hết ảnh để set slide
 
 const mallClient = mallimgSingle[0].clientWidth;
+console.log(mallClient);
 let currentDot = 0;
 
 function initTwo() {

@@ -17,8 +17,8 @@ async function show(apiItem) {
                     <div style="padding:0px 15px 15px !important;width: 100%; position: relative;">
                         <p class="box--price"> <span>₫</span> ${item.price}0.999 </p>
                         <div class="box--infor-saler">
-                            <p style="z-index: 2;color: #fff;font-weight:lighter;font-size: 15px;">50 đã bán</p>
-                            <img src="./image/fire.png" alt="">
+                            <p style="z-index: 2;color: #fff;font-weight:lighter;font-size: 15px;">${item.id}09</p>
+                            <img src="../image/fire.png" alt="">
                         </div>
                     </div>
 </a>
@@ -80,7 +80,7 @@ async function showMall(apiItemMall) {
              }" class="mall--mid__box-img">
              <p class="mall--mid__box-content">${itemMall.title.substring(
                0,
-               15
+               20
              )}</p>
              </a></div>
             `;
@@ -172,7 +172,7 @@ function filedShow(item) {
     showNow = showNow.join("");
     spShow.innerHTML = showNow;
 }
-const widthHeader = 135;
+/*  const widthHeader = 135;
 const scrollFix = document.querySelector(".sp-fixed");
 window.addEventListener("scroll", (e) => {
     var currentY = e.currentTarget.scrollY;
@@ -183,4 +183,4 @@ window.addEventListener("scroll", (e) => {
     } else {
         scrollFix.classList.remove("active");
     }
-})
+})*/
