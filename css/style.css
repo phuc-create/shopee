@@ -911,5 +911,253 @@ body {
 .container .mall .mall--mid .mall--mid__products .mall--mid__box a p {
   color: #d0011b;
 }
+.container .trend {
+  margin-top: 30px;
+  width: 1200px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.container .trend .trend-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+  padding: 20px 15px;
+}
+.container .trend .trend-head h1 {
+  font-weight: lighter;
+  font-size: calc(100% - 0.1px);
+  color: #706969;
+}
+.container .trend .trend-head .trend--more {
+  position: relative;
+}
+.container .trend .trend-head .trend--more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f53d2d;
+  font-size: 15px;
+}
+.container .trend .trend-head .trend--more a i {
+  margin-right: 3px;
+}
+.container .trend .trending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 120px;
+}
+.container .trend .trending .trending--box {
+  position: relative;
+  width: calc(100% / 5);
+  height: 100%;
+  padding: 1px 1px 15px 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .trend .trending .trending--box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .trend .trending .trending--box a .trending--box_left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline !important;
+  flex-direction: column;
+  padding: 0px 0px 0px 10px;
+  width: 50%;
+  height: 100%;
+}
+.container .trend .trending .trending--box a .trending--box_left p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.container .trend .trending .trending--box a .trending--box_left span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #757575;
+}
+.container .trend .trending .trending--box a .trending--box_right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.container .trend .trending .trending--box a .trending--box_right img {
+  width: inherit;
+  height: inherit;
+}
+.container .find {
+  width: 1200px;
+  position: relative;
+  height: 100%;
+  margin: 0px 0px 30px 0px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .find .find--top {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: space-between !important;
+  position: relative;
+}
+.container .find .find--top h1 {
+  font-weight: lighter;
+  font-size: calc(100% - 0.1px);
+  color: #706969;
+}
+.container .find .find--top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f53d2d;
+  font-size: 15px;
+}
+.container .find .find--top a i {
+  margin-left: 3px;
+}
+.container .find .find--bottom {
+  width: 1200px;
+  height: 400px;
+  padding: 10px;
+  position: relative;
+}
+.container .find .find--bottom .find--bottom__top-find {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box {
+  width: calc(100% / 3);
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: baseline !important;
+  padding: 10px;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-left {
+  width: 60%;
+  height: 100%;
+  margin-right: 2px;
+  position: relative;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-left img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-left span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: #fff;
+  background: #757575;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-left::before {
+  content: "";
+  width: 30px;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  background-size: cover;
+  left: 0;
+  background-image: url("../image/1.png");
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--one,
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--two {
+  width: 100%;
+  height: 49.5%;
+  position: relative;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--one img,
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--two img {
+  width: 100%;
+  height: 100%;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--one::before {
+  content: "";
+  width: 30px;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  background-size: cover;
+  left: 0;
+  background-image: url("../image/2.png");
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img .find-box-img-right .img-right--two::before {
+  content: "";
+  width: 30px;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  background-size: cover;
+  left: 0;
+  background-image: url("../image/3.png");
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box a .__top-find-text {
+  padding-top: 25px;
+  font-size: 20px;
+  color: #555555;
+}
 
 /*# sourceMappingURL=style.css.map */
