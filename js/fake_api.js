@@ -69,6 +69,7 @@ fetch("https://fakestoreapi.com/products")
     .then((res) => res.json())
     .then((json) => {
         showMall(json);
+        console.log(json);
     });
 
 async function showMall(apiItemMall) {
@@ -144,7 +145,7 @@ function filedShow(item) {
     let showNow = item.map((fullItem) => {
 
         return `<div class="sp--box">
-                    <a href="#" style="color: #000;">
+                    <a class="sp--box-wrap" href="#" style="color: #000;position:relative;">
                         <div class="sp-like-box">
                             Yêu Thích
                         </div>
@@ -155,17 +156,17 @@ function filedShow(item) {
                         <img class="sp-img_main" src="${fullItem.image}" alt="">
                         <img class="sp-img_abs" src="https://cf.shopee.vn/file/9bf107352e3cf54b7435edaa43e36d6b">
                         <div class="sp--box-content">
-                            <p class="sp--box-content-top">${fullItem.title.substring(0,30)}${fullItem.category}...</p>
+                            <p class="sp--box-content-top">${fullItem.title.substring(0,20)}${fullItem.category}...</p>
                             <div class="sp--box-content-pr">
                                 <span>
-                                    <p>₫</p>
+                                    <p style="color:#ee4e2e">₫</p>
                                     <h4>${fullItem.price}0</h4>
                                 </span>
-                                <span>Đã bán 2${fullItem.id}0</span>
+                                <span style="color:#0000008a;font-size:12px">Đã bán 2${fullItem.id}0</span>
                             </div>
                         </div>
+                        </a>
                         <a href="#" class="sp-hidden">Tìm sản phẩm tương tự</a>
-                    </a>
                 </div>`;
 
     });
