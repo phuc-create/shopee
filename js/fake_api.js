@@ -18,7 +18,7 @@ async function show(apiItem) {
                         <p class="box--price"> <span>₫</span> ${item.price}0.999 </p>
                         <div class="box--infor-saler">
                             <p style="z-index: 2;color: #fff;font-weight:lighter;font-size: 15px;">${item.id}09</p>
-                            <img src="../image/fire.png" alt="">
+                            <img src="./image/fire.png" alt="">
                         </div>
                     </div>
 </a>
