@@ -32,17 +32,19 @@ async function show(apiItem) {
 const prevforSale = document.querySelector(".fl-sale--prev");
 const nextforSale = document.querySelector(".fl-sale--next");
 const clientWidthsale = document.querySelector(".fl-sale__infor");
-
+const boxSale = document.querySelector(".fl-sale__infor--box");
 let currentWidth = 0;
-widthSale = clientWidthsale.clientWidth;
-
+let widthSale = boxSale.clientWidth * 6 + 12;
+console.log(widthSale);
 prevforSale.style.opacity = "0";
 prevforSale.style.visibility = "hidden";
-nextforSale.addEventListener("click", () => {
+nextforSale.addEventListener("click", (e) => {
+    console.log(e)
     prevforSale.style.opacity = "1";
     prevforSale.style.visibility = "visible";
 
     currentWidth += widthSale;
+
     clientWidthsale.style.transform = "translateX(-" + currentWidth + "px)";
     if (currentWidth >= 2400) {
         nextforSale.style.opacity = "0";
@@ -52,7 +54,7 @@ nextforSale.addEventListener("click", () => {
 prevforSale.addEventListener("click", () => {
     nextforSale.style.opacity = "1";
     nextforSale.style.visibility = "visible";
-    console.log(currentWidth, widthSale);
+
     currentWidth -= widthSale; ///currentWidth = currentWidth - widthSale;
 
     clientWidthsale.style.transform = "translateX(-" + currentWidth + "px)";
@@ -69,7 +71,7 @@ fetch("https://fakestoreapi.com/products")
     .then((res) => res.json())
     .then((json) => {
         showMall(json);
-        console.log(json);
+
     });
 
 async function showMall(apiItemMall) {
@@ -101,7 +103,7 @@ let currentPage = 0;
 const eWidth = (boxProduct.clientWidth * 20) / 2;
 const pageMall = Math.floor(eWidth / widthofDiv);
 
-console.log(widthofDiv, eWidth, pageMall);
+
 
 mallPrev.style.opacity = "0";
 mallPrev.style.visibility = "hidden";
@@ -116,7 +118,6 @@ mallNext.addEventListener("click", () => {
         mallPrev.style.visibility = "hidden";
     }
 
-    console.log(currentPage);
 
     midMallProducts.style.transform =
         "translateX(-" + currentPage * widthofDiv + "px)";
@@ -130,7 +131,6 @@ mallPrev.addEventListener("click", () => {
         mallPrev.style.visibility = "hidden";
     }
 
-    console.log(currentPage);
 
     midMallProducts.style.transform =
         "translateX(-" + currentPage * widthofDiv + "px)";

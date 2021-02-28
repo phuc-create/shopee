@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   text-decoration: none !important;
 }
 
@@ -40,6 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
+  border-radius: 10px;
 }
 .header-container .__header .a-h a {
   padding: 0px 10px 0px 0px;
@@ -47,6 +49,7 @@ body {
   font-size: 13.5px;
   font-weight: 500;
   cursor: pointer;
+  margin: 5px;
 }
 .header-container .__header .a-h a:nth-child(3) i {
   padding: 0px 3px 0px 3px;
@@ -560,7 +563,7 @@ body {
 }
 .container .cate .cate__c {
   width: 1200px;
-  height: 300px;
+  height: 323px;
   overflow: hidden;
 }
 .container .cate .cate__c .cate__container {
@@ -573,8 +576,9 @@ body {
   flex-wrap: wrap;
 }
 .container .cate .cate__c .cate__container .cate__container--box {
-  width: calc(1200px /10);
+  width: calc(1179px /10);
   height: 150px;
+  margin: 2px 1px;
   padding: 5px;
   position: relative;
   display: flex;
@@ -582,6 +586,8 @@ body {
   align-items: center;
   justify-content: flex-start !important;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   flex-direction: column;
   text-align: center;
 }
@@ -598,7 +604,15 @@ body {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3222);
+  border-radius: 10px;
+  padding: 4px;
+  transition: 0.5s;
+}
+.container .cate .cate__c .cate__container .cate__container--box span.box--title:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3222) inset;
 }
 .container .cate .cate__c .cate__container .cate__container--box:hover {
   transform: scale(1.01);
@@ -953,19 +967,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around !important;
   width: 100%;
   position: relative;
   height: 120px;
 }
 .container .trend .trending .trending--box {
   position: relative;
-  width: calc(100% / 5);
-  height: 100%;
+  width: calc(98% / 5);
+  height: 91%;
   padding: 1px 1px 15px 1px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 .container .trend .trending .trending--box a {
   display: flex;
@@ -1006,6 +1024,10 @@ body {
 .container .trend .trending .trending--box a .trending--box_right img {
   width: inherit;
   height: inherit;
+}
+.container .trend .trending .trending--box:hover {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .container .find {
   width: 1200px;
@@ -1056,11 +1078,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around !important;
+  transition: 0.5s;
 }
 .container .find .find--bottom .find--bottom__top-find .top-find-box {
-  width: calc(100% / 3);
+  width: calc(98% / 3);
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 .container .find .find--bottom .find--bottom__top-find .top-find-box a {
   position: relative;
@@ -1072,6 +1099,7 @@ body {
   flex-direction: column;
   align-items: baseline !important;
   padding: 10px;
+  transition: 0.5s;
 }
 .container .find .find--bottom .find--bottom__top-find .top-find-box a .find-box-img {
   display: flex;
@@ -1158,6 +1186,10 @@ body {
   padding-top: 25px;
   font-size: 20px;
   color: #555555;
+}
+.container .find .find--bottom .find--bottom__top-find .top-find-box:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 0;
 }
 .container .sp {
   width: 1200px;
@@ -1293,13 +1325,13 @@ body {
   z-index: 10;
   background: #ee4e2e;
   color: #fff;
-  padding: 5px 20px;
+  padding: 5px 18.3px;
   transition: 0.2s;
   font-size: 14px;
   background-color: #fff;
 }
 .container .sp .sp-nofixed .sp--box:hover {
-  transform: translateY(-3px);
+  transform: translateY(-10px);
   border: 1px solid #ee4e2e;
 }
 .container .sp .sp-nofixed .sp--box:hover a.sp-hidden {
@@ -1308,8 +1340,7 @@ body {
   z-index: 100;
   background: #ee4e2e;
   color: #fff;
-  padding: 5px 20px;
-  left: 0.5px;
+  left: 0px;
   z-index: 100;
   bottom: 5px;
 }
@@ -1329,7 +1360,8 @@ body {
   font-size: 17px;
   font-weight: lighter;
   color: #000;
-  box-shadow: 0px 0px 1px #000;
+  box-shadow: 2px 1px 3px #000;
+  border-radius: 6px;
   cursor: pointer;
 }
 

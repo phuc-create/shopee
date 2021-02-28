@@ -102,7 +102,7 @@ const cateArray = [{
     {
         id: 21,
         img: "https://cf.shopee.vn/file/cd8e0d2e6c14c4904058ae20821d0763_tn",
-        title: "Giặt giũ & Chăm sóc nhà cửa",
+        title: "Giặt giũ & nhà cửa",
     },
     {
         id: 22,
